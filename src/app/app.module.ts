@@ -16,13 +16,6 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { MessagesComponent } from './messages/messages.component';
 
 import {ReactiveFormsModule} from '@angular/forms';
-import { NameEditorComponent } from './name-editor/name-editor.component';
-import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
-
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductService } from './product.service';
-import { LoginComponent } from './login/login.component';
-import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   imports: [
@@ -45,15 +38,9 @@ import { RegistrationComponent } from './registration/registration.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    HeroSearchComponent,
-    NameEditorComponent,
-    ProfileEditorComponent,
-    ProductListComponent,
-    LoginComponent,
-    RegistrationComponent
+    HeroSearchComponent
   ],
-  providers: [ProductService],
-  
+
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
